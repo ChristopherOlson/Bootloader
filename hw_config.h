@@ -764,16 +764,16 @@
 # define BOARD_FIRST_FLASH_SECTOR_TO_ERASE	2
 # define APP_RESERVATION_SIZE			(2 * 16 * 1024) /* 2 16 Kib Sectors */
 
-# define BOARD_USART                    USART2
+# define BOARD_USART                    USART3
 # define BOARD_USART_CLOCK_REGISTER     RCC_APB1ENR
-# define BOARD_USART_CLOCK_BIT          RCC_APB1ENR_USART2EN
+# define BOARD_USART_CLOCK_BIT          RCC_APB1ENR_USART3EN
 # define BOARD_USART_PIN_CLOCK_REGISTER RCC_AHB1ENR
-# define BOARD_USART_PIN_CLOCK_BIT      RCC_AHB1ENR_IOPAEN
+# define BOARD_USART_PIN_CLOCK_BIT      RCC_AHB1ENR_IOPCEN
 
-# define BOARD_PORT_USART               GPIOA
+# define BOARD_PORT_USART               GPIOC
 # define BOARD_PORT_USART_AF            GPIO_AF7
-# define BOARD_PIN_TX                   GPIO2
-# define BOARD_PIN_RX                   GPIO3
+# define BOARD_PIN_TX                   GPIO10
+# define BOARD_PIN_RX                   GPIO11
 
 # define OSC_FREQ                       24
 
